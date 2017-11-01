@@ -8,10 +8,10 @@ namespace OnlineShop.Areas.Admin.Models
 {
     public class LoginModel
     {
-        [Required(ErrorMessage ="Mời nhập user name")]
+        [Required(ErrorMessage ="Mời nhập userName")]
         public string UserName { set; get; }
 
-        [Required(ErrorMessage = "Mời nhập user name")]
+        [Required(ErrorMessage = "Mời nhập passWord")]
         public string PassWord { set; get; }
 
         public bool RememberMe { set; get; }

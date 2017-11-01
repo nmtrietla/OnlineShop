@@ -39,7 +39,7 @@
                         @using (Html.BeginForm("Login", "Login",FormMethod.Post))
                         {
                             @Html.AntiForgeryToken()
-                            @Html.ValidationSummary(true, null, new { @class = "alert alert-danger" })
+                            @Html.ValidationSummary(false, null, new { @class = "alert alert-danger" })
                             <fieldset>
                                 <div class="form-group">
                                     @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @placeholder = "Username", @autofocus = "autofocus" })
